@@ -15,3 +15,24 @@
 ////////李鹏宇
 
 敬请期待我们小组的成果作品！！！！
+/*以网易严选官网为例*/
+yan/
+css/
+common.css          /*公共的样式规则*/
+style.css                 /*统一风格的样式规则*/
+animate.css           /*或者使用在线方式*/
+index.css                /*具体业务页面对应的样式规则*/
+login.css                /*具体业务页面对应的样式规则*/
+list.css                   /*具体业务页面对应的样式规则*/
+images/
+bg/                         /*背景图片*/
+business/              /*具体业务的图片*/
+icon/                      /*图标图片*/
+js/
+fonts/
+font-awesome/    /*或者使用在线方式*/
+iconfont/              /*或者使用在线方式*/
+ 
+index.html
+login.html                           /*英语命名，且有意义*/
+list.html                              /*英语命名，且有意义*/ 
