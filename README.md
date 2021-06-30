@@ -25,24 +25,27 @@
 
 
 敬请期待我们小组的成果作品！！！！
+>完成项目原地址：http://home.baidu.com/
 ### 以关于百度官网为例目录结构划分
 > baidu_refactor
 >> css
->>> 1
+>>> index.css——主页面的css
 
->>> 2
+>>> logo.css——关于百度的跳转页面百度logo页面的css
 
 >>> 3
 
 >>js
->>> 1
+>>> index.js——主页面的css
 
->>> 2
+>>> jquery.SuperSlide.js——logo页面的jQuery轮播效果
 
->>> 3
+>>> jquery.js——logo页面的jQuery
+
+>>>logo.js——logo页面的css
 
 >>images
->>> 1
+>>> btn_like.png——点赞图片
 
 >>> 2
 
