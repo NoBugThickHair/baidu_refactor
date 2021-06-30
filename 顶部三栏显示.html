@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+<title>顶部三栏显示</title>
+<style>
+    .baiduimg:hover{
+      cursor: pointer;
+      /* 当需要将鼠标手势转换为“手形”时，则将“hand”换为“pointer”，即“cursor:pointer;” */
+      box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+				0px 0px 20px rgba(0,0,0,0.1) inset;
+    }
+    .bd-new-span{
+        background-color: #ccd6e2;
+        cursor: pointer;
+        height: 30px;
+        width: 260px;
+        color: rgba(0,0,0,0.5);
+    }
+    .baiduimg{
+     font-size: 0px;
+        
+    }
+    .bd-new-span:hover{
+        box-shadow: 0px 1px 4px rgba(0,0,0,0.3),
+				0px 0px 20px rgba(0,0,0,0.1) inset;
+                color: rgba(0,0,0,1);
+    }
+    /* baiduimg>bd-new-span{
+        margin: 0;
+        padding: 0;
+    } */
+    
+</style>
+    </head>
+    <body>
+        <table align="center" cellspacing="10" cellpadding="0">
+            <tr>
+                <td>
+<div class="baiduimg"  onclick="zll()"><img src="./01.jpg" alt="百度AI开放平台" height="130px" width="260px">
+<div class="card-block">
+</div>
+</div>
+<div class="bd-new-span" align="center">
+        百度AI开放平台
+</div>
+</td>  
+<td>
+<div class="baiduimg" onclick="zll1()"><img src="./02.jpg" alt="DuerOS,唤醒万物" height="130px" width="260px">
+<div class="card-block">
+</div>
+</div>
+<div class="bd-new-span" align="center">
+        DuerOS,唤醒万物
+    </div>
+</td>
+<td>
+<div class="baiduimg" onclick="zll2()"><img src="./03.jpg" alt="百度自动驾驶平台Apollo" height="130px" width="260px">
+<div class="card-block">   
+</div>
+</div>
+<div class="bd-new-span" align="center">
+        百度自动驾驶平台Apollo
+    </div>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+function zll(){
+window.open("http://ai.baidu.com/");
+}
+function zll1(){
+window.open("https://dueros.baidu.com/");
+}
+function zll2(){
+window.open("https://apollo.auto/");
+}
+</script>
+    </body>
+</html>
