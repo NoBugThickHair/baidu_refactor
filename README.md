@@ -25,6 +25,7 @@
 
 
 敬请期待我们小组的成果作品！！！！
+>完成项目原地址：http://home.baidu.com/
 ### 以关于百度官网为例目录结构划分
 > baidu_refactor
 >> css
