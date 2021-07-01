@@ -61,10 +61,10 @@ a:focus {
   /*遮挡二维码了*/
 }
 
-.section {
+/* .section {
   width: 1200px;
   margin: auto;
-}
+} */
 
 .pointer {
   pointer-events: none;
@@ -111,45 +111,27 @@ a:focus {
   }
 }
 
-.nav-section {
+/* .nav-section {
   position: relative;
-}
+} */
 
 .nav-box {
   padding: 0 1rem;
 }
-
-.bd-content-nav {
+/* bd-content-nav nav-show J-bd-nav */
+.dhl {
   width: 100%;
-  box-sizing: border-box;
-  /*position: absolute;*/
   position: fixed;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(0, -100%);
-  transform: translate(0, -100%);
   background: rgba(255, 255, 255, 0.90);
   font-size: 1.4rem;
-  line-height: 4rem;
-  /*padding: 0 1rem;*/
-  overflow: hidden;
-  z-index: 9999;
-  -webkit-transition: all 0.5s;
+  line-height: 3rem;
+  /* padding: 0 1rem; */
   transition: all 0.5s;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
-}
-
-.bd-content-nav.nav-show {
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+  display: block;
+  
 }
 
-.bd-nav {
-  display: block;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
 
 .ib-row {
   font-size: 0;
