@@ -25,6 +25,18 @@
 				padding-top: 50px;
 			}
 
+			#footer {
+				width: 100%;
+				height: 45px;
+				margin-top: 20px;
+				display: block;
+				background: #2e87e1;
+				clear: both;
+				text-align: center;
+				line-height: 45px;
+				color: #ffffff;
+			}
+
 			h1 {
 				text-align: center;
 				color: rgb(117, 164, 187);
@@ -36,35 +48,105 @@
 				/*overflow: hidden;*/
 				/*遮挡二维码了*/
 			}
+
+			.section-title {
+				font-size: 2.5rem;
+				line-height: 1;
+				padding-bottom: 2.5rem;
+				padding-top: 5rem;
+				color: #969696;
+				letter-spacing: 0;
+				text-align: center;
+				border-bottom: 1px #E8E8E9 solid;
+			}
+
+			.title {
+				padding-top: 1.6rem;
+				font-size: 1.6rem;
+				color: #e10602;
+			}
+
+			.time {
+				line-height: 2rem;
+				font-size: 1rem;
+				color: #999999;
+			}
+
+			.box {
+				position: relative;
+				padding-bottom: 50%;
+			}
+
+			.img {
+				width: 80%;
+				height: 80%;
+			}
+
+			.more {
+				display: block;
+				border: 1px solid #2472dc;
+				border-radius: 2rem;
+				width: 8rem;
+				font-size: 1.2rem;
+				color: #2472dc;
+				line-height: 2.5rem;
+				text-align: center;
+				margin: 2.5rem auto;
+				cursor: pointer;
+			}
+
+			/* 张亮亮顶部三栏展示部分 */
+			.baiduimg:hover {
+				cursor: pointer;
+				/* 当需要将鼠标手势转换为“手形”时，则将“hand”换为“pointer”，即“cursor:pointer;” */
+				box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3),
+					0px 0px 20px rgba(0, 0, 0, 0.1) inset;
+			}
+
+			.bd-new-span {
+				background-color: #ccd6e2;
+				cursor: pointer;
+				height: 30px;
+				width: 260px;
+				color: rgba(0, 0, 0, 0.5);
+			}
+
+			.baiduimg {
+				font-size: 0px;
+
+			}
+
+			.bd-new-span:hover {
+				box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3),
+					0px 0px 20px rgba(0, 0, 0, 0.1) inset;
+				color: rgba(0, 0, 0, 1);
+			}
 		</style>
 		<!-- 引入echarts外联，所以不需要安装echarts-->
 		<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 	</head>
 	<style type="text/css" id="159611736196"></style>
-	<body id="indexAdmin">
-		<div class="bd-content-nav nav-show J-bd-nav">
+	<body id="indexAdmin" align="center">
+		<div class="dhl">
 			<div class="section nav-section">
-				<div class="nav-box">
-					<div class="row">
-						<div class="col-sm-2 col-xs-12">
-							<a href="http://home.baidu.com/home/index">
-								<img src="./images/logo.png" alt="" class="logo">
-							</a>
-						</div>
-						<!-- 模块1 -->
-						<div class="col-sm-10 col-xs-12">
-							<ul class="bd-nav">
-								<li class="nav-bd-link active" style=""><a href="还没填" target="_blank"
-										class="pointer">关于百度</a></li>
-								<li class="nav-bd-link"><a href="./百度产品大全.html" target="_blank">关于产品</a></li>
-								<li class="nav-bd-link"><a href="还没填" target="_blank">可持续发展</a></li>
-								<li class="nav-bd-link"><a href="还没填" target="_blank">加入我们</a></li>
-								<li class="nav-bd-link" style=""><a href="还没填" target="_blank">联系我们</a></li>
-								<li class="nav-bd-link"><a href="还没填" target="_blank">投资者关系</a></li>
-								<div class="sideline" style="width: 67px; left: 15px;"></div>
-							</ul>
-						</div>
-					</div>
+
+				<div class="col-sm-2 col-xs-12">
+					<a href="http://home.baidu.com/home/index">
+						<img src="./images/logo.png" alt="" class="logo">
+					</a>
+				</div>
+				<!-- 模块1 -->
+				<div class="col-sm-10 col-xs-12">
+					<ul class="bd-nav">
+						<li class="nav-bd-link active" style=""><a href="还没填" target="_blank" class="pointer">关于百度</a>
+						</li>
+						<li class="nav-bd-link"><a href="./百度产品大全.html" target="_blank">关于产品</a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank">可持续发展</a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank">加入我们</a></li>
+						<li class="nav-bd-link" style=""><a href="还没填" target="_blank">联系我们</a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank">投资者关系</a></li>
+						<div class="sideline" style="width: 67px; left: 15px;"></div>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -76,9 +158,94 @@
 				</div>
 			</a>
 		</div>
+		<!-- /////////责任人：张亮亮 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div>
+			<table align="center" cellspacing="10" cellpadding="0">
+				<tr>
+					<td>
+						<div class="baiduimg" onclick="zll()"><img src="./01.jpg" alt="百度AI开放平台" height="130px"
+								width="260px">
+							<div class="card-block">
+							</div>
+						</div>
+						<div class="bd-new-span" align="center">
+							百度AI开放平台
+						</div>
+					</td>
+					<td>
+						<div class="baiduimg" onclick="zll1()"><img src="./02.jpg" alt="DuerOS,唤醒万物" height="130px"
+								width="260px">
+							<div class="card-block">
+							</div>
+						</div>
+						<div class="bd-new-span" align="center">
+							DuerOS,唤醒万物
+						</div>
+					</td>
+					<td>
+						<div class="baiduimg" onclick="zll2()"><img src="./03.jpg" alt="百度自动驾驶平台Apollo" height="130px"
+								width="260px">
+							<div class="card-block">
+							</div>
+						</div>
+						<div class="bd-new-span" align="center">
+							百度自动驾驶平台Apollo
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript">
+			function zll() {
+				window.open("http://ai.baidu.com/");
+			}
+
+			function zll1() {
+				window.open("https://dueros.baidu.com/");
+			}
+
+			function zll2() {
+				window.open("https://apollo.auto/");
+			}
+		</script>
+		<!-- /////////责任人:吴嘉玮；李鹏宇 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="section-title">百度动态</div>
+		<div>
+			
+			
+			
+			这里的百度动态
+		</div>
+		
+		<!-- /////////责任人：张超杰 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="section-title">工作在百度</div>
+		<div class="video-mask" videoid="0">
+			<img src="./images/close_video_mask.png" alt="" class="close-video-mask">
+			<div class="video-title">我们的故事</div>
+			<div class="video-container" width="25%" height="25%" controls>
+				<video src="http://static.home.baidu.com/homebd/1495104075.mp4" controls="" class="video-item"></video>
+			</div>
+			<div class="video-desc">
+				<p style="text-align: center;"><span
+						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在最美的年华里，走进最接近梦想的地方。</span>
+				</p>
+				<p style="text-align: center;"><span
+						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在这里，我们亲眼见证技术的力量，一起用今天的努力，改变不久后的未来。</span>
+				</p>
+				<p style="text-align: center;"><span
+						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">百度四季延时，为了留住飞逝的韶光，送给时光里追梦的你。</span>
+				</p>
+				<p style="text-align: center;"><span
+						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">如果我们的征途是星辰大海，愿你我青春无悔。</span><br>
+				</p>
+			</div>
+		</div>
 
 
-		<h1>大家都在搜</h1>
+	
+		<!-- /////////责任人:赵宏伟 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!-- <h1>大家都在搜</h1> -->
+		<div class="section-title">大家都在搜</div>
 		<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 		<div id="main" style="width: 1000px;height:500px;"></div>
 		<script type="text/javascript">
@@ -295,33 +462,53 @@
 			// 使用刚指定的配置项和数据显示图表。
 			myChart.setOption(option);
 		</script>
+		
+		<!-- /////////责任人：姚狄朋 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="section-title">我们的Doodle</div>
+		<div >
+			<table align="center" border="0" width="75%" cellspacing="0">
+				<tr class="title">
+					<td>母亲节</td>
+					<td>中国航天日</td>
+					<td>愚人节</td>
+				</tr>
+				<tr class="time">
+					<td>2021-05-09</td>
+					<td>2021-04-24</td>
+					<td>2021-04-01</td>
+				</tr>
+				<tr>
+					<td><img class="img" src="./images/gjetj.gif"></td>
+					<td><img class="img" src="./images/dwj.gif"></td>
+					<td><img class="img" src="./images/bdfd2020.gif"></td>
+		
+				</tr>
+				<tr>
+					<th colspan="3">
+						<a href="baidu_logo.html" class="more" target="">查看更多</a>
+					</th>
+				</tr>
+		
+			</table>
+		</div>
+		
+		
+		<!-- /////////责任人:吴嘉玮；李鹏宇 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="section-title">百度公司介绍</div>
+		<div>
+			
+			
+			
+			这里的百度动态
+		</div>
 
-		<div class="mobile-bd-bottom-icp">© Baidu <a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
-			京ICP证030173号</div>
+
+		
+		<div id="footer">
+			©2021 本页面 由Bug无踪,头发出众小组合作完成
+		</div>
 
 		<div class="loading"></div>
-
-		<div class="video-mask" videoid="0">
-			<img src="./images/close_video_mask.png" alt="" class="close-video-mask">
-			<div class="video-title">我们的故事</div>
-			<div class="video-container">
-				<!-- <video src="http://static.home.baidu.com/homebd/1495104075.mp4" controls="" class="video-item" style="width: 100%;"></video> -->
-			</div>
-			<div class="video-desc">
-				<p style="text-align: center;"><span
-						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在最美的年华里，走进最接近梦想的地方。</span>
-				</p>
-				<p style="text-align: center;"><span
-						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">在这里，我们亲眼见证技术的力量，一起用今天的努力，改变不久后的未来。</span>
-				</p>
-				<p style="text-align: center;"><span
-						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">百度四季延时，为了留住飞逝的韶光，送给时光里追梦的你。</span>
-				</p>
-				<p style="text-align: center;"><span
-						style="color: rgb(34, 34, 34); font-family: Consolas,&quot;Lucida Console&quot;,&quot;Courier New&quot;,monospace; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none; font-size: 14px;">如果我们的征途是星辰大海，愿你我青春无悔。</span><br>
-				</p>
-			</div>
-		</div>
 		<script src="./js/jquery.min.js"></script>
 		<script src="./js/rem.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
