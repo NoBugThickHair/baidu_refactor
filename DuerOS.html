@@ -13,6 +13,7 @@
     <script type="text/javascript" src="./dueros/js/Validform_v5.3.1.js"></script>
     </head>
 <body>
+    <!-- 头 -->
 <div class="header">
     <div class="logo-box">
         <h1 class="logo">
@@ -38,12 +39,72 @@
     </ul>
     <ul class="lang-ch">
         <li class="lang-now"><a href="javascript:;">中</a></li>
-        <li><a href="https://dueros.baidu.com/en/index.html">En</a></li>
+        <li onclick="zll2()">En</li>
     </ul>
+</div>
+<script type="text/javascript">
+    function zll2() {
+        myWindow=window.open('','','width=200,height=100')
+        myWindow.document.write("英文页面哪有时间做啊，有时间也不会！")
+        myWindow.focus()
+    }
+</script>
+
+
+<!-- 轮播页面 -->
+<div class="banner" style="height: 900px;">
+    <div class="swiper-container" id="banner-swiper">
+        <div class="swiper-wrapper" style="width: 6000px; transform: translate3d(-4500px, 0px, 0px); transition-duration: 0.3s; height: 900px;">
+            <!-- 一堆堆图片 -->
+            <div class="swiper-slide swiper-slide-duplicate" style="width: 1500px; height: 900px;">
+                <a class="slide-wrap-link" href="https://create.baidu.com/">
+                    <img class="bimg-slide" src="./dueros/images/20190612061603516.jpg" >
+                </a>
+            </div>
+            <div class="swiper-slide" style="width: 1500px; height: 900px;">
+                <a class="slide-wrap-link" href="https://dueros.baidu.com/html/2020/activity_0106/362.html">
+                    <img class="bimg-slide" src="./dueros/images/20200107034151824.jpg" >
+                </a>
+            </div>
+                <div class="swiper-slide" style="width: 1500px; height: 900px;">
+                <a class="slide-wrap-link" href="https://create.baidu.com/">
+                    <img class="bimg-slide" src="./dueros/images/20190612061603516.jpg" >
+                </a>
+            </div>
+                 <div class="swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active" style="width: 1500px; height: 900px;">
+                <a class="slide-wrap-link" href="https://dueros.baidu.com/html/2020/activity_0106/362.html">
+                    <img class="bimg-slide" src="./dueros/images/20200107034151824.jpg" >
+                </a>
+            </div></div>
+            <!-- 页面切换效果 -->
+        <div class="pagination" id="bannerpagination" style="margin-left: -60px;">
+            <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span>
+            </div>
+    </div>
 </div>
 
 
 
+
+
+ 
+
+<!-- 了解此刻DuerOS在做什么？ -->
+<div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 合作企业 -->
 <div class="friends-team">
     <h2 class="news-tit">合作企业</h2>
     <p class="liti-tit">头发出众，准备好颠覆这个世界了么？</p>
@@ -67,6 +128,9 @@
         <a class="friends-s-btn" >查看更多</a>
 </div>
    
+
+
+<!-- 最后 -->
 <div class="footer">
 <div class="foot-btm clearfix">
     <p class="fl">BUG版权所有</p>
@@ -76,6 +140,9 @@
 
 
 
+
+
+<!-- 直接用人家现成的js -->
 <script type="text/javascript" src="./dueros/js/jquery.validate.js"></script>
 <script type="text/javascript" src="./dueros/js/jwplayer.js"></script>
 <script type="text/javascript" src="./dueros/js/jquery.particleground.min.js"></script>
