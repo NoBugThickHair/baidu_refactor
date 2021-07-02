@@ -3,7 +3,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="shortcut icon" href="./images/head.ico" type="image/x-icon">
-		<script type="text/javascript" async="" src="./js/js"></script>
 		<script src="./js/fontbase.js"></script>
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="./css/common.css">
@@ -19,7 +18,7 @@
 				margin: auto;
 				padding-top: 50px;
 				background-image: url(./images/home.png);
-                background-size: 100%;
+				background-size: 100%;
 				margin-top: 70px;
 			}
 
@@ -190,6 +189,29 @@
 				font-size: 1.7rem;
 				margin: 0 7rem;
 			}
+
+			.img-group {
+				position: relative;
+				display: inline-block;
+				text-align: center;
+			}
+
+			.img-tip {
+				position: absolute;
+				/* position: relative; */
+				bottom: 0;
+				background: #333;
+				color: #fff;
+				opacity: 0.6;
+				display: none;
+				font-size: 20px;
+			}
+
+			.img-group:hover .img-tip {
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
 		</style>
 		<!-- 引入echarts外联，所以不需要安装echarts-->
 		<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
@@ -233,8 +255,6 @@
 				<td>
 					<div class="baiduimg1" onclick="zll()"><img src="./images/01.jpg" alt="百度AI开放平台" height="130px"
 							width="260px">
-						<div class="card-block">
-						</div>
 					</div>
 					<div class="bd-new-span1" align="center">
 						百度AI开放平台
@@ -243,8 +263,6 @@
 				<td>
 					<div class="baiduimg2" onclick="zll1()"><img src="./images/02.jpg" alt="DuerOS,唤醒万物" height="130px"
 							width="260px">
-						<div class="card-block">
-						</div>
 					</div>
 					<div class="bd-new-span2" align="center">
 						DuerOS,唤醒万物
@@ -254,8 +272,6 @@
 				<td>
 					<div class="baiduimg3" onclick="zll2()"><img src="./images/03.jpg" alt="百度自动驾驶平台Apollo"
 							height="130px" width="260px">
-						<div class="card-block">
-						</div>
 					</div>
 					<div class="bd-new-span3" align="center">
 						百度自动驾驶平台Apollo
@@ -289,39 +305,40 @@
 
 						<div class="news-list">
 							<div class="news-item">
-								<ul type="square"><li>
-									<div class="news-box">
-										<a href="http://home.baidu.com/home/index/news_detail/id/17965"
-											target="_blank">共享无人车Apollo Moon全球首秀</a>
-										<div class="news-time">2021-06-17</div>
-									</div>
+								<ul type="square">
+									<li>
+										<div class="news-box">
+											<a href="http://home.baidu.com/home/index/news_detail/id/17965"
+												target="_blank">共享无人车Apollo Moon全球首秀</a>
+											<div class="time">2021-06-17</div>
+										</div>
 									</li>
 									<li>
-									<div class="news-box">
-										<a href="http://home.baidu.com/home/index/news_detail/id/17964"
-											target="_blank">《百度人工智能专利白皮书》全文发布</a>
-										<div class="news-time">2021-05-28</div>
-									</div>
+										<div class="news-box">
+											<a href="http://home.baidu.com/home/index/news_detail/id/17964"
+												target="_blank">《百度人工智能专利白皮书》全文发布</a>
+											<div class="time">2021-05-28</div>
+										</div>
 									</li>
 									<li>
-									<div class="news-box">
-										<a href="http://home.baidu.com/home/index/news_detail/id/17963"
-											target="_blank">百度Q1财报：非广告收入同比增长70%</a>
-										<div class="news-time"> 2021-05-18</div>
-									</div>
+										<div class="news-box">
+											<a href="http://home.baidu.com/home/index/news_detail/id/17963"
+												target="_blank">百度Q1财报：非广告收入同比增长70%</a>
+											<div class="time"> 2021-05-18</div>
+										</div>
 									<li>
 									</li>
 									<div class="news-box">
 										<a href="http://home.baidu.com/home/index/news_detail/id/17962"
 											target="_blank">百度AI冠军技术加持中国跳水冠军梦之队</a>
-										<div class="news-time">2021-04-22</div>
+										<div class="time">2021-04-22</div>
 									</div>
 									<li>
 									</li>
 									<div class="news-box">
 										<a href="http://home.baidu.com/home/index/news_detail/id/17961"
 											target="_blank">百度Apollo乐高式汽车智能化方案升级</a>
-										<div class="news-time">
+										<div class="time">
 											2021-04-19 </div>
 									</div>
 									<li>
@@ -329,7 +346,7 @@
 									<div class="news-box">
 										<a href="http://home.baidu.com/home/index/news_detail/id/17959"
 											target="_blank">百度发布信息安全综合治理双月报</a>
-										<div class="news-time">
+										<div class="time">
 											2021-04-02
 										</div>
 									</div>
@@ -340,35 +357,46 @@
 
 						</div>
 						<div class="more-news">
-							<a href="/home/index/news_list" target="_blank">
-								<span class="more-news-tip">更多新闻</span>
-
-							</a>
+							<a href="/home/index/news_list" class="more" target="">更多新闻</a>
 						</div>
 					</div>
 				</div>
 				<!-- 负责人：李鹏宇/////////////////////////////////////////////////////////////////////// -->
+
+
 				<div class="col-sm-6 col-xs-12">
 					<div class="zt">专题</div>
 					<table align="center" border="0" width="450px" cellspacing="0">
 						<tr>
-							<td><img class="card-img lazy" src="./images/bddt_1.jpg" width="200px" height="142px">
-								<div class="">
-									二十度 </div>
+							<td>
+								<div class="img-group">
+									<img src="./images/bddt_1.jpg" width="200px" height="142px">
+									<div class="img-tip">二十度</div>
+								</div>
 							</td>
-							<td><img class="card-img lazy" src="./images/bddt_2.jpg" width="200px" height="142px">
-								<div class="">
-									2020百度用户记录片 </div>
+
+							<td>
+								<div class="img-group">
+									<img src="./images/bddt_2.jpg" width="200px" height="142px">
+									<div class="img-tip">2020百度用户记录片</div>
+								</div>
 							</td>
 						</tr>
+
 						<tr>
-							<td><img class="card-img lazy" src="./images/bddt_3.jpg" width="200px" height="142px">
-								<div class="">
-									百度AI寻人温情短片《一条回家路》 </div>
+							<td>
+								<div class="img-group">
+									<p></p>
+									<img src="./images/bddt_3.jpg" width="200px" height="142px">
+									<div class="img-tip">百度AI寻人温情短片《一条回家路》</div>
+								</div>
 							</td>
-							<td><img class="card-img lazy" src="./images/bddt_4.jpeg" width="200px" height="142px">
-								<div class="">
-									2020致敬我们的坚持 </div>
+							<td>
+								<div class="img-group">
+									<p></p>
+									<img src="./images/bddt_4.jpeg" width="200px" height="142px">
+									<div class="img-tip">2020致敬我们的坚持</div>
+								</div>
 							</td>
 						</tr>
 					</table>
@@ -379,95 +407,120 @@
 		<!-- /////////责任人：张超杰 /////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 		<div class="main">
 			<div class="main-body">
-			  <div id="inwork-indicator" class="index2"></div>
-			  <div class="full-section inwork-section bd-home-inwork">
-				<div class="section" >
-				  
-				  <div class="section-title inwork-section-title">工作在百度</div>
-				  <div class="section-content inwork-section-content">
-					<div class="row card-deck">
-					  <div class="col-sm-4 J-inwork-item video-link-wrap" vid="0">
-						  <div class="card bd-inwork-item">
-							<div class="card-block bd-card-title">
-							  <span class="bd-card-span">我们的故事<span class="bd-font-bottomline"></span></span>
-							</div>
-							<div class="bd-card-mod">
-							  <a href="http://www.baidu.com" target="_black">
-							  <div class="img-outer">
-								<div class="img-inner">
-								  <img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/eciadjhnmbglfk1496935062.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A42Z%2F-1%2F%2F7a5dda2678084065c79294c81c134e5512c8635900169a10dc2aff78f0749029" alt="Card image cap" src="./images/eciadjhnmbglfk1496935062.jpg" style="display: inline;">
-								  <div class="bd-work-coverbg"></div>
-								  <div class="bd-work-cover">
-									<img src="./images/play.png" alt="" class="video-link">
-									<div class="bd-work-slogan">时光里的百度</div>
-								  </div>
+				<div id="inwork-indicator" class="index2"></div>
+				<div class="full-section inwork-section bd-home-inwork">
+					<div class="section">
+
+						<div class="section-title inwork-section-title">工作在百度</div>
+						<div class="section-content inwork-section-content">
+							<div class="row card-deck">
+								<div class="col-sm-4 J-inwork-item video-link-wrap" vid="0">
+									<div class="card bd-inwork-item">
+										<div class="card-block bd-card-title">
+											<span class="bd-card-span">我们的故事<span
+													class="bd-font-bottomline"></span></span>
+										</div>
+										<div class="bd-card-mod">
+											<a href="http://www.baidu.com" target="_black">
+												<div class="img-outer">
+													<div class="img-inner">
+														<img class="card-img lazy"
+															data-original="http://static.home.baidu.com/homebd/eciadjhnmbglfk1496935062.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A42Z%2F-1%2F%2F7a5dda2678084065c79294c81c134e5512c8635900169a10dc2aff78f0749029"
+															alt="Card image cap"
+															src="./images/eciadjhnmbglfk1496935062.jpg"
+															style="display: inline;">
+														<div class="bd-work-coverbg"></div>
+														<div class="bd-work-cover">
+															<img src="./images/play.png" alt="" class="video-link">
+															<div class="bd-work-slogan">时光里的百度</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
 								</div>
-							  </div>
-							</a>
+								<div class="col-sm-4 J-inwork-item">
+									<a href="http://home.baidu.com/home/index/join_us" class="card bd-inwork-item"
+										target="_blank">
+										<div class="card-block bd-card-title">
+											<span class="bd-card-span">加入我们<span
+													class="bd-font-bottomline"></span></span>
+										</div>
+										<div class="bd-card-mod">
+											<div class="img-outer">
+												<div class="img-inner">
+													<img class="card-img lazy"
+														data-original="http://static.home.baidu.com/homebd/bnhdmeifkclgaj1496935048.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A28Z%2F-1%2F%2F17fdc9e7d7d7f4cef6fa3775acdb745b4711566f9cb55aa4354269661060c541"
+														alt="Card image cap" src="./images/bnhdmeifkclgaj1496935048.jpg"
+														style="display: inline;">
+													<div class="bd-work-coverbg"></div>
+													<div class="bd-work-cover">
+														<div class="bd-work-slogan">
+															<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+																招最好的人，给最大的空间</p>
+															<p style="box-sizing: border-box; margin: 0px 0px 10px;">
+																看最后的结果，让优秀人才脱颖而出</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="col-sm-4 J-inwork-item">
+									<a href="http://quanjing.baidu.com/baidu" class="card bd-inwork-item"
+										target="_blank">
+										<div class="card-block bd-card-title">
+											<span class="bd-card-span">在这里工作<span
+													class="bd-font-bottomline"></span></span>
+										</div>
+										<div class="bd-card-mod">
+											<div class="img-outer">
+												<div class="img-inner">
+													<img class="card-img lazy"
+														data-original="http://static.home.baidu.com/homebd/nambjidhegkclf1496935030.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A11Z%2F-1%2F%2Fa9b6a155b49be13ce9a2ea7b399f84dd4be5a2acca53cb1c3edd32cd45ea4b5d"
+														alt="Card image cap" src="./images/nambjidhegkclf1496935030.jpg"
+														style="display: inline;">
+													<div class="bd-work-coverbg"></div>
+													<div class="bd-work-cover">
+														<div class="bd-work-slogan">
+															<p>百度全景<br></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
 							</div>
-						  </div>
 						</div>
-						 <div class="col-sm-4 J-inwork-item">
-						  <a href="http://home.baidu.com/home/index/join_us" class="card bd-inwork-item" target="_blank">
-												<div class="card-block bd-card-title">
-							<span class="bd-card-span">加入我们<span class="bd-font-bottomline"></span></span>
-						  </div>
-						  <div class="bd-card-mod">
-							<div class="img-outer">
-							  <div class="img-inner">
-								<img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/bnhdmeifkclgaj1496935048.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A28Z%2F-1%2F%2F17fdc9e7d7d7f4cef6fa3775acdb745b4711566f9cb55aa4354269661060c541" alt="Card image cap" src="./images/bnhdmeifkclgaj1496935048.jpg" style="display: inline;">
-								<div class="bd-work-coverbg"></div>
-								<div class="bd-work-cover">
-								  <div class="bd-work-slogan">
-									<p style="box-sizing: border-box; margin: 0px 0px 10px;">招最好的人，给最大的空间</p><p style="box-sizing: border-box; margin: 0px 0px 10px;">看最后的结果，让优秀人才脱颖而出</p>                          </div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  </a>
-						</div>                              <div class="col-sm-4 J-inwork-item">
-						  <a href="http://quanjing.baidu.com/baidu" class="card bd-inwork-item" target="_blank">
-												<div class="card-block bd-card-title">
-							<span class="bd-card-span">在这里工作<span class="bd-font-bottomline"></span></span>
-						  </div>
-						  <div class="bd-card-mod">
-							<div class="img-outer">
-							  <div class="img-inner">
-								<img class="card-img lazy" data-original="http://static.home.baidu.com/homebd/nambjidhegkclf1496935030.jpg?authorization=bce-auth-v1%2Fe6803def36ae467f81ebdb4bdc75f119%2F2017-06-08T15%3A17%3A11Z%2F-1%2F%2Fa9b6a155b49be13ce9a2ea7b399f84dd4be5a2acca53cb1c3edd32cd45ea4b5d" alt="Card image cap" src="./images/nambjidhegkclf1496935030.jpg" style="display: inline;">
-								<div class="bd-work-coverbg"></div>
-								<div class="bd-work-cover">
-								  <div class="bd-work-slogan">
-									<p>百度全景<br></p>                          </div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  </a>
-						</div>            </div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="full-section h5-inwork-section">
-				<div class="section">
-				  <div class="h5-inwork-title">
-					<span class="h5-inwork-title-text">加入我们</span>
-					<div class="h5-inwork-title-underline"></div>
-				  </div>
-				  <a href="http://home.baidu.com/home/index/join_us" class="h5-inwork-content">
-								<div class="img-outer">
-					<div class="img-inner">
-					  <img class="card-img" src="./images/bnhdmeifkclgaj1496935048.jpg">
-					  <div class="h5-inwork-cover">
-						<div class="h5-inwork-slogan">
-						  <p style="box-sizing: border-box; margin: 0px 0px 10px;">招最好的人，给最大的空间</p><p style="box-sizing: border-box; margin: 0px 0px 10px;">看最后的结果，让优秀人才脱颖而出</p>                </div>
-					  </div>
 					</div>
-				  </div>
-				  </a>
 				</div>
-			  </div>
-		   </div>
-				
+				<div class="full-section h5-inwork-section">
+					<div class="section">
+						<div class="h5-inwork-title">
+							<span class="h5-inwork-title-text">加入我们</span>
+							<div class="h5-inwork-title-underline"></div>
+						</div>
+						<a href="http://home.baidu.com/home/index/join_us" class="h5-inwork-content">
+							<div class="img-outer">
+								<div class="img-inner">
+									<img class="card-img" src="./images/bnhdmeifkclgaj1496935048.jpg">
+									<div class="h5-inwork-cover">
+										<div class="h5-inwork-slogan">
+											<p style="box-sizing: border-box; margin: 0px 0px 10px;">招最好的人，给最大的空间</p>
+											<p style="box-sizing: border-box; margin: 0px 0px 10px;">看最后的结果，让优秀人才脱颖而出
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 
