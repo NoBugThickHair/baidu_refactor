@@ -1,5 +1,7 @@
 # baidu_refactor
 #### 杰普实训——百度页面重构
+#### 小组logo标识
+![favicon](https://user-images.githubusercontent.com/64067593/124287063-2d77f600-db82-11eb-9296-a457c0cc7d77.jpg)
 #### 这里是Bug无踪，头发出众的小组作品
 > 小组成员：
 >> 张亮亮：组长——百度ESG理念：https://esg.baidu.com/
@@ -22,6 +24,7 @@
 >>> 张超杰————管理团队：http://home.baidu.com/home/index/management_team
 
 >>> 王宇航————加入我们：http://home.baidu.com/home/index/join_us
+
 
 
 
