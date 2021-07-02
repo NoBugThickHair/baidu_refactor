@@ -4,14 +4,23 @@
 > 小组成员：
 >> 张亮亮：组长——百度ESG理念：https://esg.baidu.com/
 >>> 刘效廷————投资者关系：https://ir.baidu.com/
+
 >>> 赵宏伟————百度大事记：http://home.baidu.com/home/index/baidu_road
+
 >>> 刘伟杰————Dueros：https://dueros.baidu.com/
+
 >>> 吴嘉玮————新闻动态：http://home.baidu.com/home/index/news_list
+
 >>> 程林浩————百度产品：https://www.baidu.com/more/
+
 >>> 姚狄朋————我们的核心价值观：http://home.baidu.com/home/index/company_culture
+
 >>> 李鹏宇————联系百度：http://home.baidu.com/home/index/contact_us
+
 >>> 武江毅————百度logo平台：https://logo.baidu.com/
+
 >>> 张超杰————管理团队：http://home.baidu.com/home/index/management_team
+
 >>> 王宇航————加入我们：http://home.baidu.com/home/index/join_us
 
 
