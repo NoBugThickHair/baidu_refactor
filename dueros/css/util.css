@@ -1,0 +1,670 @@
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+.hd-container {
+    max-width: 1190px;
+    margin: auto;
+    position: relative;
+}
+.logo-box {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    width: 110px;
+    height: 24px;
+    /*background: url(../../images/dumi/logo.png) no-repeat;*/
+    margin: 20px 0 0 30px;
+}
+
+.logo a {
+    display: block;
+    height: 100%;
+    text-indent: -9999em;
+}
+.logo a img {
+    width: 100%;
+}
+.nav {
+    margin: auto;
+    color: #fff;
+    height: 100%;
+    width: 69%;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 6.2%;
+}
+.lang-ch {
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+.lang-ch li {
+    display: inline-block;
+    /*width: 25%;*/
+    /*height: 100%;*/
+    line-height: 60px;
+    font-size: 14px;
+}
+.lang-ch li a {
+    color: #666;
+}
+.lang-ch li:first-child:after {
+    content: "|";
+    margin-left: 8px;
+    color: #666;
+}
+.lang-ch .lang-now a {
+    color: #fff;
+}
+.nav-children {
+    height: 100%;
+}
+.nav-children:hover {
+    background-color: #272727;
+}
+.nav-name {
+    height: 100%;
+    color: #fff;
+    display: block;
+    line-height: 60px;
+    font-size: 14px;
+    padding: 0 22px;
+}
+.nav-down-menu {
+    width: 1190px;
+    height: 460px;
+    position: absolute;
+    top: 60px;
+    z-index: 2;
+    display: none;
+}
+.nav-down-block {
+    right: -6.8%;
+}
+.nav-down-sc {
+    right: 0;
+}
+.nav-children-dis {
+    position: relative;
+}
+.nav-children-dis .nav-down-menu {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.opa-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 460px;
+    z-index: -1;
+}
+.opa-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-name:hover {
+    color: #0073ea;
+}
+.nav-children-dis .nav-down-menu .opa {
+    background-color: #000;
+    /* opacity: 0.9;
+     filter: alpha(opacity=90);*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav-down-menu .box-l {
+    width: 285px;
+    height: 100%;
+    position: relative;
+}
+.nav-down-menu .opa {
+    /* opacity: 0.9;
+     filter: alpha(opacity=90);*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav-down-menu .box-l .opa {
+    background-color: #000;
+}
+.nav-down-menu .box-r {
+    position: relative;
+    width: 905px;
+    height: 100%;
+}
+.nav-down-menu .box-r .opa {
+    background-color: #191818;
+}
+.nav-down-menu .option-btn-box {
+    position: relative;
+    z-index: 2;
+    padding: 0 0 0 0;
+}
+.nav-down-menu .option-btn {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.nav-down-menu .option-btn.on {
+    background-color: #1d1d1d;
+    color: #0073ea;
+}
+.nav-down-menu .option-con-box {
+    position: relative;
+    z-index: 2;
+}
+.nav-down-menu .option-con {
+    display: none;
+    padding: 0 40px;
+}
+.nav-children2 .nav-down-menu .option-con {
+    padding-right: 10px;
+}
+.nav-down-menu .option-con.on {
+    display: block;
+}
+.nav-down-menu .each-col {
+    width: 36%;
+}
+.nav-down-menu .each-col1 {
+    width: 28%;
+}
+.nav-down-menu .each-col .min-tit {
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+.nav-down-menu .each-col .links {
+    display: block;
+    font-size: 14px;
+    color: #a4a4a4;
+    line-height: 24px;
+    margin: 0 0 10px 0;
+}
+.nav-down-menu .each-col .color {
+    color: #0073ea;
+}
+.nav-down-menu .min-tit2 {
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+.nav-down-menu .apply-box {
+    padding: 10px 0 0 0;
+}
+.nav-down-menu .apply {
+    margin: 0 20px 0 0;
+}
+.nav-down-menu .apply2 {
+    margin: 0 35px 0 0;
+}
+.nav-down-menu .apply-icon {
+    /* width: 42px; */
+    height: 42px;
+    margin: 0 auto;
+}
+.nav-down-menu .apply-icon img {
+    margin: auto;
+}
+
+
+.nav-down-menu .apply-name {
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+}
+.nav-down-menu .sunmary {
+    font-size: 14px;
+    line-height: 30px;
+}
+.nav-down-menu .sunmary a {
+    color: #0073ea;
+}
+.nav-down-menu .bj-pic-box {
+    width: 782px;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+.nav-down-menu .bj-pic-box img {
+    display: block;
+    width: 100%;
+}
+.nav-down-menu .appliances {
+    position: absolute;
+    top: 0;
+    height: 245px;
+}
+.nav-down-menu .appliances .al-name {
+    width: 56px;
+    padding: 0 10px;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+    border: 1px solid #c6c6c6;
+    border-radius: 12px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -39px;
+    display: none;
+}
+.nav-down-menu .appliances .al-pic {
+    cursor: pointer;
+}
+.nav-down-menu .appliances1 {
+    left: 20px;
+    width: 44px;
+}
+.nav-down-menu .appliances1 .al-pic {
+    margin: 95px 0 0 0;
+}
+.nav-down-menu .appliances2 {
+    left: 165px;
+    width: 43px;
+}
+.nav-down-menu .appliances2 .al-pic {
+    margin: 115px 0 0 0;
+}
+.nav-down-menu .appliances3 {
+    left: 319px;
+    width: 58px;
+}
+.nav-down-menu .appliances3 .al-pic {
+    margin: 125px 0 0 0;
+}
+.nav-down-menu .appliances4 {
+    left: 420px;
+    width: 16px;
+}
+.nav-down-menu .appliances4 .al-pic {
+    margin: 82px 0 0 0;
+}
+.nav-down-menu .appliances5 {
+    left: 478px;
+    width: 42px;
+}
+.nav-down-menu .appliances5 .al-pic {
+    margin: 136px 0 0 0;
+}
+.nav-down-menu .appliances6 {
+    left: 580px;
+    width: 15px;
+}
+.nav-down-menu .appliances6 .al-pic {
+    margin: 102px 0 0 0;
+}
+.nav-down-menu .appliances7 {
+    left: 738px;
+    width: 25px;
+}
+.nav-down-menu .appliances7 .al-pic {
+    margin: 132px 0 0 0;
+}
+.nav-down-menu .appliances7 .al-name {
+    margin: 0 0 0 -50px;
+}
+.nav-down-menu .each-row {
+    line-height: 28px;
+    padding: 35px 0 0 0;
+}
+.nav-down-menu .each-row .c-name {
+    font-size: 18px;
+    display: inline-block;
+    width: 108px;
+    position: relative;
+    padding: 0 20px 10px 0;
+}
+.nav-down-menu .each-row .c-name .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.nav-down-menu .each-row .c-name .icon.hover {
+    display: none;
+}
+.nav-down-menu .each-row .c-name:hover a,
+.nav-down-menu .each-row .c-name:hover span {
+    color: #3388ff;
+}
+.nav-down-menu .each-row .c-name:hover .icon {
+    display: none;
+}
+.nav-down-menu .each-row .c-name:hover .icon.hover {
+    display: inline-block;
+}
+.nav-down-menu .each-row:last-child .c-name {
+    padding-right: 0;
+}
+.nav-down-menu .each-row:first-child .c-name,
+.nav-down-menu .option-con-1 .each-row:first-child .c-name {
+    width: 75px;
+}
+.nav-down-menu .each-row .c-name a,
+.nav-down-menu .each-row .c-name span {
+    color: #fff;
+}
+.nav-down-menu .option-con-1 .each-row .c-name,
+.nav-down-menu .option-con-1 .each-row .e-name {
+    width: 180px;
+    padding-right: 20px;
+}
+.nav-down-menu .each-row .c-name .col-line {
+    width: 1px;
+    height: 18px;
+    background-color: #fff;
+    position: absolute;
+    right: 30px;
+    top: -3px;
+    margin: 7px 0 0 0;
+}
+.nav-down-menu .each-row .e-name {
+    width: 108px;
+    font-size: 14px;
+    color: #a4a4a4;
+    padding: 0 20px 0 0;
+}
+.nav-down-menu .each-row:last-child .e-name {
+    padding-right: 0;
+}
+.nav-down-menu .each-row .e-name a {
+    color: #a4a4a4;
+    padding: 0 10px 0 0;
+    width: 108px;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 24px;
+}
+.nav-down-menu .c-box .e-link {
+    line-height: 28px;
+    padding: 0 5px;
+    margin: 0 15px 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+.nav-down-menu .e-pic {
+    margin: 0 30px 0 0;
+    display: block;
+}
+.nav-down-menu .e-pic .pic {
+    width: 224px;
+    border: 1px solid #313131;
+}
+.nav-down-menu .e-pic .txt {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 10px 0 0 2px;
+}
+.nav-down-menu .product-box {
+    margin: 40px -25px 0 0;
+}
+.nav-down-menu .product {
+    width: 370px;
+    height: 240px;
+    background-color: #333;
+    margin: 0 20px 20px 0;
+}
+.nav-down-menu .product.small {
+    width: 240px;
+    height: 180px;
+}
+.nav-down-menu .product .tit-h5 {
+    font-size: 18px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+.nav-down-menu .product .txt {
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+}
+.nav-down-menu .product .apply-for-btn {
+    color: #0073ea;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    width: 90px;
+    border-radius: 16px;
+    border: 1px solid #0073ea;
+    margin: 45px auto 0;
+    display: block;
+}
+.nav-down-menu .product.small .tit-h5 {
+    margin-top: 30px;
+}
+.nav-down-menu .product.small .apply-for-btn {
+    margin-top: 30px;
+}
+.nav-down-menu .product .apply-for-btn:hover,
+.nav-down-menu .detail-btn:hover {
+    color: #fff;
+    background-color: #0073ea;
+}
+.nav-down-menu .detail-btn {
+    color: #0073ea;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    width: 90px;
+    border-radius: 16px;
+    border: 1px solid #0073ea;
+    margin-top: 30px;
+    display: block;
+}
+
+.nav-down-menu .down-links-box {
+    position: relative;
+}
+.nav-down-menu .down-links-box .down-links {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.nav-down-menu .down-links-box .down-links a {
+    color: #fff;
+}
+.nav-down-menu .down-links-box .down-links:hover {
+    /* background-color: #1d1d1d;*/;
+}
+.nav-down-menu .down-links-box .down-links:hover a {
+    color: #0073ea;
+}
+
+.what-link {
+    color: #0073ea;
+    font-size: 14px;
+    margin-top: 18px;
+    display: inline-block;
+}
+.what-link + .what-link {
+    margin-left: 40px;
+}
+.channel-para {
+    max-width: 363px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+.swiper-anli .swiper-wrapper {
+    width: 714px;
+}
+.swiper-anli {
+    overflow: hidden;
+    width: 714px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.swiper-anli .swiper-slide {
+    width: 224px;
+}
+.anli-left,
+.anli-right {
+    display: inline-block;
+    width: 14px;
+}
+.anli-left {
+    margin-right: 15px;
+}
+.anli-right {
+    margin-left: 15px;
+}
+
+/* 0925 */
+.mobile-nav {
+    display: none;
+    width: 19px;
+}
+.mobile-nav img {
+    width: 100%;
+    display: none;
+}
+.mobile-nav img.on {
+    display: block;
+}
+@media screen and (max-width: 1200px) {
+    .nav {
+        margin-left: 0;
+    }
+    .nav-name {
+        padding: 0 16px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .nav {
+        display: none;
+    }
+    .lang-ch {
+        display: none;
+    }
+    .mobile-nav {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+}
+/* 12.13 修改图标大小 */
+.nav-down-menu .apply .apply-icon img {
+    width: 40px;
+    height: 40px;
+}
+.nav-down-menu .apply2 .apply-icon img {
+    width: 60px;
+    height: 40px;
+}
+.channel-para {
+    color: #fff;
+    opacity: .6;
+    filter: alpha(opacity=60)\9;
+}
+.nav-down-menu .each-row .e-name a {
+    color: #fff;
+    opacity: .6;
+    filter: alpha(opacity=60) \9;
+}
+.nav-down-menu .c-box .e-link {
+    color: #fff;
+    opacity: .6;
+    filter: alpha(opacity=60) \9;
+}
+
+/* 12.18 下拉导航样式修改  */
+@media screen and (max-width: 1200px) {
+    .nav-down-menu {
+        position: fixed;
+        right: 0;
+        left: 50%;
+        margin-left: -595px;
+    }
+    .nav-down-sc {
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .nav-down-menu {
+        width: 1000px;
+        margin-left: -500px;
+    }
+    .nav-down-menu .box-l {
+        width: 200px;
+    }
+    .nav-down-menu .box-r {
+        width: 800px;
+        overflow: hidden;
+    }
+    .nav-down-menu .option-btn {
+        padding: 0 0 0 50px;
+    }
+    .nav-down-menu .option-con {
+        padding: 0 40px;
+    }
+    .nav-children2 .nav-down-menu .option-con {
+        padding-right: 0;
+    }
+    .nav-down-menu .each-row .e-name {
+        width: 565px;
+    }
+    .nav-down-menu .each-row {
+        padding-top: 15px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .mobile-nav {
+        display: inline-block;
+        position: fixed;
+        top: 20px;
+        right: 15px;
+        z-index: 99999;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin: 20px 0 0 17px;
+    }
+    .mobile-nav {
+        right: 17px;
+    }
+    .mobile-nav img.menu-btn {
+        width: 150%;
+    }
+}
+.mobile-nav {
+    width: 14px;
+    padding: 5px;
+    top: 16px;
+}
