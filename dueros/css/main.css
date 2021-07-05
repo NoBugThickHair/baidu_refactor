@@ -127,7 +127,6 @@ i {
 
 img {
     border: 0;
-    vertical-align: middle;
     display: block;
 }
 
@@ -1615,15 +1614,10 @@ fieldset {
     }
 
     .sences-tabbtn a {
-    /*width: 70px;
-    height: 70px;*/
         margin: 0 7px;
     }
 
-    .sences-tabbtn a em {
-    /*position: relative;
-    top: -4px*/;
-    }
+
 
     #swiper-container2 .news-bottom p {
         max-height: 42px;
@@ -4809,11 +4803,6 @@ fieldset {
     color: #fff;
 }
 
-@media screen and (max-width: 1440px) {
-    .ab-we-banner .ab-we-b-text {
-        /*top: 8%*/;
-    }
-}
 
 @media screen and (max-width: 1024px) {
     .ab-we-banner .ab-we-b-text a.made-btn {
@@ -6154,12 +6143,7 @@ fieldset {
     text-align: center;
 }
 
-.dueros-t1 .dueros-t1-con h1 {
-    /*font-size: 28px;
-    color: #333;
-    margin-top: 40px;
-    text-align: center;*/;
-}
+
 
 .dueros-t1 .dueros-t1-con p {
     max-width: 500px;
@@ -6177,7 +6161,7 @@ fieldset {
 }
 
 .dueros-t1 .dueros-t1-con ul li {
-    float: left;
+
     display: inline-block;
     width: 25%;
     text-align: center;
@@ -7056,9 +7040,7 @@ fieldset {
     background: url(../../images/dumi/solu-query-icon01.png) no-repeat 2px 5px;
 }
 
-.introduction-ul li .product-cont .solu-span {
-    /*height: auto;*/;
-}
+
 
 .join-contant {
     height: 190px \9;
@@ -7145,13 +7127,7 @@ fieldset {
     height: 110px;
 }
 
-.success-pro ul li {
-    /* cursor: pointer; */;
-}
 
-.success-pro ul li a {
-    /* cursor: pointer; */;
-}
 
 @media screen and (max-width: 1080px) {
     .example-left ul li.cur i {
@@ -7180,9 +7156,6 @@ fieldset {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
-    }
-
-    .solution-anli li {
     }
 
     .solution-anli ul.clearfix:after {
@@ -7391,26 +7364,6 @@ fieldset {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .introuse2 ul li {
-        /*height: 285px;*/;
-    }
-
-    .introuse2 ul li a > img,
-    .introuse2 ul li a img {
-        width: 60px;
-        height: 60px;
-    }
-    .foot-btm {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .introuse2 ul li {
-        /*height: 315px;*/;
-    }
-}
 
 .news-details .title .info span#hits {
     display: none;
@@ -7472,7 +7425,7 @@ fieldset {
     color: #666;
 }
 
-/* 行业解决方案样式 start */
+
 .forbidden-scroll {
     overflow: hidden;
     height: 100%;
