@@ -2,8 +2,6 @@ html {
   font-size: 12px;
   width: 100%;
   height: 100%;
-  /*overflow-x: hidden; åŠ ä¸Šä¼šå¯¼è‡´fexedå…ƒç´ è¦†ç›–åœ¨bodyæ»šåŠ¨æ¡ä¸Š*/
-  -webkit-text-size-adjust: none;
 }
 
 body {
@@ -11,7 +9,6 @@ body {
   min-width: 1200px;
   height: 100%;
   overflow: auto;
-  font-family: Microsoft Yahei, Arial, Helvetica, sans-serif, serif;
   position: relative;
 }
 
@@ -58,7 +55,6 @@ a:focus {
 .full-section {
   width: 100%;
   /*overflow: hidden;*/
-  /*é®æŒ¡äºŒç»´ç äº†*/
 }
 
 .section {
@@ -255,7 +251,7 @@ a:focus {
 }
 
 
-/* pc-navæ ·å¼ */
+/* pc-nav样式 */
 
 .pc-nav-bar {
   padding: 19px 29px 0;
@@ -809,26 +805,4 @@ img.share-wechat-qrcode.active {
 }
 
 
-/*ç«™å†…æœç´¢æ ·å¼*/
 
-.bd-zhannei-search {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.bd-zhannei-btn {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  width: 102px;
-  height: 27px;
-  line-height: 27px;
-  padding: 0;
-  border: 0;
-  background: none;
-  background-color: #38f;
-  font-size: 15px;
-  color: white;
-  box-shadow: none;
-  font-weight: normal;
-}
