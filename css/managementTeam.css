@@ -1,0 +1,287 @@
+p {
+  margin: 0;
+}
+
+.main-body {
+  background-color: #fafafa;
+}
+
+.banner {
+  background: url(../images/managementTeam-banner.jpg) no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+  max-height: 540px;
+}
+
+.banner-title {
+  padding-top: 130px;
+  padding-bottom: 350px;
+  font-size: 50px;
+  color: #FFFFFF;
+  width: 100%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.management-box {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -278px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.management-row {
+  padding: 0 75px;
+  font-size: 0;
+}
+
+.management-detail {
+  cursor: pointer;
+  margin: 35px 0;
+  padding: 0 25px;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.management-detail:first-child {
+  margin-left: 132px;
+}
+
+@media (max-width: 768px) {
+  .management-detail:first-child {
+    margin-left: 0;
+  }
+}
+
+.first-line {
+  margin-left: 132px;
+}
+
+@media (max-width: 768px) {
+  .first-line {
+    margin-left: 0;
+  }
+}
+
+.management-img-box {
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.people-detail {
+  /*position: relative;*/
+  /*padding-bottom: 150%;*/
+  /*height: 0;*/
+  background-color: white;
+}
+
+.management-img {
+  width: 100%;
+  /*height: auto;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+}
+
+.management-text {
+  width: 100%;
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  background-color: #fff;
+  padding: 0 28px;
+}
+
+.management-name {
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.management-position {
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 0;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 29px;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.management-active {
+  background: #2298f4;
+}
+
+.management-active .management-name,
+.management-active .management-position {
+  color: white;
+}
+
+.detail-message {
+  clear: both;
+  background: #f4fbff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.20);
+  height: 0;
+  transition: 0.3s height;
+  -moz-transition: 0.3s height;
+  -webkit-transition: 0.3s height;
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.detail-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 1rem;
+  cursor: pointer;
+}
+
+
+.detail-message > p:not(:nth-of-type(1)) {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /*padding-bottom: 2rem;*/
+  word-wrap: break-word;
+  text-align: justify;
+  word-break: break-all;
+  font-size: 1.4rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 2.2rem;
+  /*text-align:left;*/
+}
+.detail-message > p:nth-of-type(1){
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  font-size: 2.6rem;
+  color: #2298f4;
+  letter-spacing: 0;
+  line-height: 2.6rem;
+}
+
+.pc-mp {
+  display: block;
+}
+
+.h5-mp {
+  display: none;
+}
+
+.fadeUp {
+  animation: moveUp 3s ease-in backwards;
+  animation-delay: 3s;
+}
+
+@keyframes moveUp {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-moz-keyframes moveUp {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-o-keyframes moveUp {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .management-row{
+    padding: 0 25px;
+  }
+  .management-position {
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-top: 0rem;
+    line-height: 1.5rem;
+  }
+  .pc-mp {
+    display: none;
+  }
+  .h5-mp {
+    display: block;
+  }
+  .management-detail {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .management-box {
+    width: 100%;
+    margin: -7rem auto 0rem;
+  }
+  .management-position {
+    padding-bottom: 0;
+  }
+  .management-name {
+    margin-top: 0.5rem;
+    padding-top: 0;
+    font-size: 1.7rem;
+  }
+  .banner {
+    height: auto;
+  }
+  .banner-title {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 9rem;
+  }
+  .detail-close {
+    width: 1.5rem;
+  }
+  .people-name {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .people-experience {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+}
