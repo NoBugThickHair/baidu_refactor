@@ -1,0 +1,48 @@
+html {
+	color: #333;
+	font:normal 12px '微软雅黑','Microsoft YaHei';
+}
+body,ul,ol,p,h1,h2,h3 {
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+/*公共样式*/
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table thead {
+	text-align: center;
+}
+
+.table td {
+	border: 1px solid #ededed;
+	line-height: 2em;
+}
+
+.btn {
+	display: inline-block;
+	padding: .5em 1em;
+	border: 1px solid #ededed;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.btn:hover {
+	box-shadow: 0 0 5px #ededed;
+}
+
+
+
+
+
+
+
