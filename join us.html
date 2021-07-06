@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="./images/head.ico" type="image/x-icon">
+		<script src="./js/fontbase.js"></script>
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/common.css">
+		<!-- <script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cscript src='" + _bdhmProtocol +
+				"hm.baidu.com/h.js%3Fb9a77820b2fa17d7223b50a01ab1aa7a' type='text/javascript'%3E%3C/script%3E"));
+		</script> -->
+		<link rel="stylesheet" href="./css/index.css">
+		<title></title>
+		<style>
+			#main {
+				margin: auto;
+				padding-top: 50px;
+				background-image: url(./images/home.png);
+				background-size: 100%;
+				margin-top: 70px;
+			}
+
+			#footer {
+				width: 100%;
+				height: 45px;
+				margin-top: 20px;
+				display: block;
+				background: #2e87e1;
+				clear: both;
+				text-align: center;
+				line-height: 45px;
+				color: #ffffff;
+			}
+
+
+			.head-img {
+				width: 100%;
+				/*overflow: hidden;*/
+				/*遮挡二维码了*/
+			}
+
+			.section-title {
+				font-size: 2.5rem;
+				line-height: 1;
+				padding-bottom: 2.5rem;
+				padding-top: 5rem;
+				color: #969696;
+				letter-spacing: 0;
+				text-align: center;
+				border-bottom: 1px #E8E8E9 solid;
+			}
+
+			.title {
+				padding-top: 1.6rem;
+				font-size: 1.6rem;
+				color: #e10602;
+			}
+
+			.time {
+				line-height: 2rem;
+				font-size: 1rem;
+				color: #999999;
+			}
+
+			.box {
+				position: relative;
+				padding-bottom: 50%;
+			}
+
+			.img {
+				width: 80%;
+				height: 80%;
+			}
+
+			.more {
+				display: block;
+				border: 1px solid #2472dc;
+				border-radius: 2rem;
+				width: 8rem;
+				font-size: 1.2rem;
+				color: #2472dc;
+				line-height: 2.5rem;
+				text-align: center;
+				margin: 2.5rem auto;
+				cursor: pointer;
+			}
+
+       *{  
+            margin: 0px;  
+            padding: 0px;  
+        }  
+        video{  
+            position: fixed;  
+            right: 0px;  
+            bottom: 0px;  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+            /*加滤镜*/
+            /* filter: blur(15px); 背景模糊设置 */
+            /*-webkit-filter: grayscale(100%);*/  
+            /*filter:grayscale(100%); //背景灰度设置*/  
+            z-index:-11
+        }  
+        source{  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+        } 
+		h1{
+		  width: 100%;
+			text-align: left;
+			font-size: 38px;
+			color: white;
+		}
+
+        #menu li{
+			display:inline-balock;
+			float:left;
+			list-style: none;
+		}
+		#menu li:hover {
+          background:#000; /* 变换背景色 */
+		  width: 150px;
+		  height: 100px;
+          color:#fff; /* 变换文字颜色 */
+        }
+
+        #menu li a.last {
+          border-right:0; /* 去掉左侧边框 */
+        }
+		#li1{
+			width: 150px;
+		  height: 100px;
+			margin-bottom: 10%;
+			margin-left: 25%;
+			margin-top: 3%;
+		}
+		#li2{
+			width: 150px;
+		  height: 100px;
+			margin-bottom: 10%;
+			margin-left: 10%;
+			margin-top: 3%;
+		}
+		#li3{
+			width: 150px;
+		  height: 100px;
+			margin-bottom: 10%;
+			margin-left: 10%;
+			margin-top: 3%;
+		}
+		</style>
+		<!-- 引入echarts外联，所以不需要安装echarts-->
+		<!-- <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script> -->
+	</head>
+	<style type="text/css" id="906701235"></style>
+	<body id="indexAdmin" align="center">
+		<div class="dhl" >
+			
+			<div class="section nav-section" >
+
+				<div class="col-sm-2 col-xs-12"style="background-color: #ffffff; z-index: 3;opacity:0.8;">
+          
+					<a href="http://home.baidu.com/home/index">
+						<img src="./images/logo.png" alt="" class="logo" style="margin-top: 15px;">
+					</a>
+				</div>
+				<!-- 模块1 -->
+				<div class="col-sm-10 col-xs-12" style="background-color: #ffffff; z-index: 3;opacity:0.8;">
+					<ul class="bd-nav">
+						<li class="nav-bd-link active" style=""><a href="还没填" target="_blank" ><h4>关于百度</h4></a>
+						</li>
+						<li class="nav-bd-link" style="height: 45px;"><a href="./百度产品大全.html" target="_blank"><h4>关于产品</h1></a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank"><h4>可持续发展</h4></a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank" class="pointer"><h4>加入我们</h4></a></li>
+						<li class="nav-bd-link" style=""><a href="还没填" target="_blank"><h4>联系我们</h4></a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank"><h4>投资者关系</h4></a></li>
+						<div class="sideline" style="width: 67px; left: 15px;"></div>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+    <div class="video" >
+      <div style="margin-left: 170px;">
+      <br><br><br><br><br><br><br><br><br><br><br><br><h1>招最好的人，给最大的空间</h1>
+      <h1>看最后的结果，让优秀人才脱颖而出</h1></div>
+      
+      <video autoplay muted loop >
+      <source src="video.mp4">
+  
+      </video>
+<br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br>
+    <div class="flooer" style="z-index: 3;width: 100%;height: 185px; background-color: #fff;;opacity: 0.55; "bottom="0px" >
+		
+      <ul style="display:balock;" id="menu" >
+       
+		<li id="li1"><a><img src="./images/career_hot1.png"><br><br><span>社会招聘</span></a></li>
+        <li id="li2"><a><img src="./images/career_hot2.png"><br><br><span>校园招聘</span></a></li>
+        <li id="li3"><a><img src="./images/career_hot3.png"><br><br><span>百度校园</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+		<div class="loading" style="inline-size: auto;"></div>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/rem.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/snap.svg-min.js"></script>
+		<script src="./js/mustache.min.js"></script>
+		<script src="./js/common.js"></script>
+
+	</body>
+</html>
