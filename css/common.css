@@ -2,8 +2,6 @@ html {
   font-size: 12px;
   width: 100%;
   height: 100%;
-  /*overflow-x: hidden; 加上会导致fexed元素覆盖在body滚动条上*/
-  -webkit-text-size-adjust: none;
 }
 
 body {
@@ -11,7 +9,6 @@ body {
   min-width: 1200px;
   height: 100%;
   overflow: auto;
-  font-family: Microsoft Yahei, Arial, Helvetica, sans-serif, serif;
   position: relative;
 }
 
@@ -58,13 +55,12 @@ a:focus {
 .full-section {
   width: 100%;
   /*overflow: hidden;*/
-  /*遮挡二维码了*/
 }
 
-/* .section {
+.section {
   width: 1200px;
   margin: auto;
-} */
+}
 
 .pointer {
   pointer-events: none;
@@ -111,27 +107,47 @@ a:focus {
   }
 }
 
-/* .nav-section {
+.nav-section {
   position: relative;
-} */
+}
 
 .nav-box {
   padding: 0 1rem;
 }
-/* bd-content-nav nav-show J-bd-nav */
-.dhl {
+
+.bd-content-nav {
   width: 100%;
+  box-sizing: border-box;
+  /*position: absolute;*/
   position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%);
   background: rgba(255, 255, 255, 0.90);
   font-size: 1.4rem;
-  line-height: 3rem;
-  /* padding: 0 1rem; */
+  line-height: 4rem;
+  /*padding: 0 1rem;*/
+  overflow: hidden;
+  z-index: 9999;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  transform: translate(0, 0);
-  display: block;
-  
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
 }
 
+.bd-content-nav.nav-show {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.bd-nav {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 1;
+  list-style: none;
+  font-size: 20px;
+  padding: 15px 20px 0px 20px;
+}
 
 .ib-row {
   font-size: 0;
@@ -367,8 +383,9 @@ a:focus {
 }
 
 .col-sm-2 {
+  /* position: fixed; */
   width: 16.666666666666666%;
-  padding: 0 15px;
+  padding: 10px 0 0 50px;
   float: left;
 }
 
@@ -791,26 +808,4 @@ img.share-wechat-qrcode.active {
 }
 
 
-/*站内搜索样式*/
 
-.bd-zhannei-search {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.bd-zhannei-btn {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  width: 102px;
-  height: 27px;
-  line-height: 27px;
-  padding: 0;
-  border: 0;
-  background: none;
-  background-color: #38f;
-  font-size: 15px;
-  color: white;
-  box-shadow: none;
-  font-weight: normal;
-}
