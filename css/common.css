@@ -143,8 +143,10 @@ a:focus {
 .bd-nav {
   display: block;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 1;
   list-style: none;
+  font-size: 20px;
+  padding: 15px 20px 0px 20px;
 }
 
 .ib-row {
@@ -162,7 +164,7 @@ a:focus {
 }
 
 .logo {
-  height: 30px;
+  height: 100%;
 }
 
 .bd-nav li {
@@ -381,8 +383,9 @@ a:focus {
 }
 
 .col-sm-2 {
+  /* position: fixed; */
   width: 16.666666666666666%;
-  padding: 0 15px;
+  padding: 10px 0 0 50px;
   float: left;
 }
 
