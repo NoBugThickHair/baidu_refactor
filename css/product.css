@@ -3,7 +3,7 @@
     width: 100%;
     border: none;
     text-align: center;
-    box-shadow: darkgray 0 0 10px 0;
+    box-shadow: 0px 5px rgb(226, 226, 226);
     
 }
 /* 百度一下图标 */
@@ -13,14 +13,15 @@
 /* 搜索框 */
 .kbdyx{
     width: 400px;
-    height: 25px;
+    height: 30px;
+    margin-bottom: 25px;
 }
 /* 百度一下按钮 */
 .bdyx{
     background-color: blue;
     color: honeydew;
     position: relative;
-    height: 30px;
+    height: 35px;
     border: none;
     margin-top: 20px;
 }
@@ -29,11 +30,13 @@
     margin-left: 250px;
     color: black;
     font-size: 12px;
+    text-decoration: none;
 }
 /* 帮助样式 */
 .help{
     color: black;
     font-size: 12px;
+    text-decoration: none;
 }
 /* 主体 */
 #main{
@@ -81,15 +84,14 @@ sup{
     height: 25px;
     float: right;
 }
-.first{
-    text-align: center;
-}
+/* .first{
+    text-align: left;
+} */
 .con{
     height: 60px;
     width: 200px;
     margin-left: 10px;
     float: left;
-    text-align: center;
 }
 /* 超链接图片区域 */
 .picture{
@@ -108,6 +110,8 @@ sup{
     position: relative;
     right: 20px;
     color:blue;
+    text-decoration: none;
+    padding-left: 20px;
 }
 .translate{
     width: 120px;
@@ -120,4 +124,14 @@ span{
 }
 p{
     height: 30px;
+}
+/* 底部的样式 */
+.footer{
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+/* 底部超链接 */
+.foot{
+    color: #666;
 }
