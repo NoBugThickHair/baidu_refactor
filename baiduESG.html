@@ -1,32 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+百度esg理念
+ 编写者：张亮亮
+ -->
+<html>
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./images/head.ico" type="image/x-icon">
     <title>百度ESG理念</title>
     <style type="text/css">
      /* ul>li:nth-child(odd){background-color: rgb(0, 255, 225);}
        ul>li:nth-child(even){background-color: chartreuse;} */
-       ul{
+       /* ul{
            display: flex;
-           /* flex-flow: column wrap; */
+           flex-flow: column wrap;
            justify-content: space-around;
            margin-top: 1%;
-       }
+       } */
     .wyh{
         background-color:#3b4ad2;
         margin-top: 40%;
     }
-        * {
+        /* * {
             margin: 0;
             padding: 0px;
-        }
+        } */
 
-        .w {
+        /* .w {
             width: 100%;
 
-        }
+        } */
 
         .esg0 {
             cursor: pointer;
@@ -39,9 +43,9 @@
             padding-bottom: 200px;
         }
 
-        .a {
+        /* .a {
             font: size 50px;
-        }
+        } */
 
         .esg3 {
             font-size: 40px;
@@ -55,29 +59,29 @@
             padding-right:45%;
             display:inline-block;
         }
-
+/* 
         .li {
             list-style: none;
-        }
+        } */
 
-        .a {
+        /* .a {
             text-decoration: lawngreen;
-        }
+        } */
 
         .header {
-            height: 40px;
-            margin: 30px auto;
-            padding: 0px;
+            height: 20px;
+            margin: 10px 90px;
+            /* padding: 0px; */
            
         }
 
         .logo {
             float: left;
-            width: 100px;
-            height: 42px;
+            width: 50px;
+            height: 10px;
         }
 
-        .dhl {
+        /* .dhl {
             float: left;
             margin-left: 360px;
             position: absolute;
@@ -87,19 +91,28 @@
             float: left;
             margin: 0 50px;
             padding: 0px  0px;
-        }
+            display:block;
+            outline:0;
+            text-decoration:none;
+            text-align: center;
+            position:relative;
+            border:none;
+        } 
 
-        /* .dhl ul li a {
+         .dhl ul li a {
             display: block;
             height: 42px;
             padding: 0 10px;
             line-height: 42px;
             padding-bottom: 0px;
+            text-decoration:none; 
+
             
         } */
         .lg{
             float: left;
             margin: 20px;
+            margin-bottom: 100px;
         }
         .lgl{
             cursor: pointer;
@@ -169,17 +182,98 @@
             padding-top: 48px;
             margin-left: 42.5%;
         }
-        table caption{padding:60px 0px;font-size: 30px;color: white;}
+        table caption{padding:110px 0px;font-size: 30px;color: white;}
         .eg{
             font-size: 30px;
         }
         div img{  
                 cursor: pointer;  
-                transition: all 0.5s; /* 所有的属性变化在0.5s的时间段内完成 */
+                transition: all 0.1s; /* 所有的属性变化在0.5s的时间段内完成 */
             }  
         div img:hover{  
-                transform: scale(1.1); /* 鼠标放到图片上的时候图片按比例放大1.5倍   */
+                transform: scale(1.1); /* 鼠标放到图片上的时候图片按比例放大   */
             }  
+            .jiao{
+                margin-top: 600px;
+                position: absolute;
+                width:100% ;
+                height: 200px;
+                color:white;
+                font-size: 12px;
+                padding-top: 80px;
+            }
+            li{
+            list-style-type: none;
+        }
+        #menu {
+            width: 45%;
+            margin-left: 48%;
+            height: 45px;
+            margin-bottom: 0%;
+        }
+        #menu li{
+            float: left;
+            width: 100px;
+            line-height:39px;
+            text-align: center;
+            position:relative;
+            border:none;
+
+        }
+        #menu li a {
+            font-size:16px; 
+            color: black;
+            display:block;
+            outline:0;
+            text-decoration:none; 
+        }
+        #menu li:hover a {
+            color: #ff0000; /*导航栏文字颜色 */
+        }
+        #menu li:hover .dropdown_1column {
+            left:0px;
+            top:39px;
+        }
+        .dropdown_1column{ /* 下拉菜单边框颜色*/
+            margin: 0px auto;
+            float: center;
+            position: absolute;
+            left:-999em;
+            text-align: left;
+            border: 1px solid #066591;
+            border-top: none;
+            background: #F4F4F4;
+            width: 100px;
+        }
+        #menu li:hover div a { /* 下拉菜单文字颜色*/
+        font-size:16px
+        ;color:#444;
+        }
+
+        #menu li:hover div a:hover{color:#21910e;} /*下拉带单鼠标停留颜色*/
+
+        #menu li ul {
+        list-style:none;
+        padding:10px 5px;
+        margin:0;
+        }
+        #menu li ul li {
+        font-size:12px;
+        line-height:30px;
+        position:relative;
+        padding:0;
+        margin:0;
+        text-align:left;
+        width:100px;
+        float:left;
+        }
+        #menu li ul li:hover {
+        background:none;
+        border:none;
+        padding: 0px;
+        margin:0px;
+        }
+
         /* .esg5{
             cursor: pointer;
             transition: all 0.5s;
@@ -229,20 +323,62 @@
 </head>
 
 <body>
-    <div class="header w">
+    <div class="header">
         <div class="logo">
-            <img src="images/logo.gif">
-        </div>
-        <div class="dhl">
-            <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">我们的管理</a></li>
-                <li><a href="#">我们的实践</a></li>
-                <li><a href="#">报告与新闻</a></li>
-                <li><a href="#">联系我们</a></li>
-            </ul>
+            <img src="images/logo.gif" width="180px" height="60px">
         </div>
     </div>
+        <div id="menu">
+            <ul>
+                <li> <a href="" class="nodrop">首页</a></li>
+                <li><a href="" class="drop">我们的管理</a>
+                    <div class="dropdown_1column">
+                    <div class="col_1">
+                        <ul class="simple">
+                                <li><a href="">ESG理念</a></li>
+                                <li><a href="">ESG管理</a></li>
+                        </ul>
+                </div>
+                </div>
+</li>
+                <li><a href="" class="drop">我们的实践</a>
+                <div class="dropdown_1column">
+                    <div class="col_1">
+                            <ul class="simple">
+                                    <li><a href="">低碳运营</a></li>
+                                    <li><a href="">信任承诺</a></li>
+                                    <li><a href="">人才发展</a></li>
+                                    <li><a href="">服务质量</a></li>
+                                    <li><a href="">社会责任</a></li>
+                                    <li><a href="">公司治理</a></li>
+                            </ul>
+        
+                    </div>
+               
+                </div>
+                </li>
+        
+                <li><a href="" class="drop">报告与新闻</a> 
+                    <div class="dropdown_1column">
+                    <div class="col_1">
+                        <ul class="simple">
+                                <li><a href="">相关报告</a></li>
+                                <li><a href="">相关新闻</a></li>
+                        </ul>
+                </div>
+                </div></li>
+                <li><a href="" class="drop">联系我们</a> 、
+                    <div class="dropdown_1column">
+                    <div class="col_1">
+                        <ul class="simple">
+                                <li><a href="">联系方式</a></li>
+                                <li><a href="">意见反馈</a></li>
+                        </ul>
+                </div>
+                </div></li>
+            </ul>
+        </div>
+    
     <div>&nbsp;</div>
     <div class="esg0">
 
@@ -317,8 +453,14 @@
             相关新闻
         </div>
     </div>
-   
-</div>
-</body>
+   <div class="jiao" style="background-color: black;"><center>相关网站: 关于百度&nbsp&nbsp&nbsp百度投资者关系&nbsp&nbsp&nbsp百度隐私保护平台&nbsp&nbsp&nbsp百度用户服务中心&nbsp&nbsp&nbsp百度个人信息保护咨询</center><br>
+                            <center>Copyright Reserved © 2021 张亮亮版权所有</center><br>
+                                      <center>联系张亮亮<br></center>
+    
+    
+    </div>
 
+
+	
+</body>
 </html>
