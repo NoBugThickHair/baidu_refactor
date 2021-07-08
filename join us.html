@@ -9,84 +9,11 @@
 		<link rel="shortcut icon" href="./images/head.ico" type="image/x-icon">
 		<script src="./js/fontbase.js"></script>
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="./css/common.css">
-		
+
+		<link rel="stylesheet" href="./css/wenhua1.css">
 		<link rel="stylesheet" href="./css/index.css">
 		<title></title>
 		<style>
-			#main {
-				margin: auto;
-				padding-top: 50px;
-				background-image: url(./images/home.png);
-				background-size: 100%;
-				margin-top: 70px;
-			}
-
-			#footer {
-				width: 100%;
-				height: 45px;
-				margin-top: 20px;
-				display: block;
-				background: #2e87e1;
-				clear: both;
-				text-align: center;
-				line-height: 45px;
-				color: #ffffff;
-			}
-
-
-			.head-img {
-				width: 100%;
-				/*overflow: hidden;*/
-				/*遮挡二维码了*/
-			}
-
-			.section-title {
-				font-size: 2.5rem;
-				line-height: 1;
-				padding-bottom: 2.5rem;
-				padding-top: 5rem;
-				color: #969696;
-				letter-spacing: 0;
-				text-align: center;
-				border-bottom: 1px #E8E8E9 solid;
-			}
-
-			.title {
-				padding-top: 1.6rem;
-				font-size: 1.6rem;
-				color: #e10602;
-			}
-
-			.time {
-				line-height: 2rem;
-				font-size: 1rem;
-				color: #999999;
-			}
-
-			.box {
-				position: relative;
-				padding-bottom: 50%;
-			}
-
-			.img {
-				width: 80%;
-				height: 80%;
-			}
-
-			.more {
-				display: block;
-				border: 1px solid #2472dc;
-				border-radius: 2rem;
-				width: 8rem;
-				font-size: 1.2rem;
-				color: #2472dc;
-				line-height: 2.5rem;
-				text-align: center;
-				margin: 2.5rem auto;
-				cursor: pointer;
-			}
-
        *{  
             margin: 0px;  
             padding: 0px;  
@@ -111,11 +38,19 @@
             height: auto;  
             width: auto;  
         } 
+		.flooer{
+			z-index: 3;
+			width: 100%;
+			height:185px; 
+			background-color: #fff;
+			opacity: 0.55;
+			position: fixed;
+		}
 		h1{
 		  width: 100%;
 			text-align: left;
 			font-size: 38px;
-			color: white;
+			color: white;/*设置标题样式*/
 		}
 
         #menu li{
@@ -124,10 +59,11 @@
 			list-style: none;
 		}
 		#menu li:hover {
+		  opacity: 1;
           background:#000; /* 变换背景色 */
+		  color:#fff; /* 变换文字颜色 */
 		  width: 150px;
-		  height: 100px;
-          color:#fff; /* 变换文字颜色 */
+		  height: 100px;/*设置底部栏分栏鼠标移入移出效果*/
         }
 
         #menu li a.last {
@@ -135,21 +71,22 @@
         }
 		#li1{
 			width: 150px;
-		  height: 100px;
+		    height: 100px;
+			position: relative;
 			margin-bottom: 10%;
 			margin-left: 25%;
-			margin-top: 3%;
+			margin-top: 3%;/*设置底部栏的分栏样式*/
 		}
 		#li2{
 			width: 150px;
-		  height: 100px;
+		    height: 100px;
 			margin-bottom: 10%;
 			margin-left: 10%;
 			margin-top: 3%;
 		}
 		#li3{
 			width: 150px;
-		  height: 100px;
+		    height: 100px;
 			margin-bottom: 10%;
 			margin-left: 10%;
 			margin-top: 3%;
@@ -160,43 +97,47 @@
 	</head>
 	<style type="text/css" id="906701235"></style>
 	<body id="indexAdmin" align="center">
-		<div class="dhl" >
+		<div class="dhl" style="position: fixed; background: #fff;opacity: 0.8; width: 100%;">
 			
 			<div class="section nav-section" >
 
-				<div class="col-sm-2 col-xs-12"style="background-color: #ffffff; z-index: 3;opacity:0.8;">
-          
+				<div class="col-sm-2 col-xs-12" style="background-color: #fff; z-index: 3;opacity: 1;">
+          <center>
 					<a href="http://home.baidu.com/home/index">
-						<img src="./images/logo.png" alt="" class="logo" style="margin-top: 15px;">
+						<img src="./images/logo.png" alt="" class="logo" style="margin-top: 10px;margin-left: 8%;">
 					</a>
 				</div>
 				<!-- 模块1 -->
-				<div class="col-sm-10 col-xs-12" style="background-color: #ffffff; z-index: 3;opacity:0.8;">
+				<!-- 吸顶栏 -->
+				
+				<div class="col-sm-10 col-xs-12" style="background-color: #ffffff; z-index: 2;opacity:0.8;">
 					<ul class="bd-nav">
-						<li class="nav-bd-link active" style=""><a href="还没填" target="_blank" ><h4>关于百度</h4></a>
-						</li>
-						<li class="nav-bd-link" style="height: 45px;"><a href="./百度产品大全.html" target="_blank"><h4>关于产品</h1></a></li>
-						<li class="nav-bd-link"><a href="./baiduESG.html" target="_blank"><h4>可持续发展</h4></a></li>
-						<li class="nav-bd-link"><a href="./join us.html" target="_blank" class="pointer"><h4>加入我们</h4></a></li>
-						<li class="nav-bd-link" style=""><a href="./lianxi.html" target="_blank"><h4>联系我们</h4></a></li>
+						<li class="nav-bd-link" ><a href="还没填" target="_blank" ><h4>关于百度</h4></a></li>
+						<li class="nav-bd-link"><a href="./百度产品大全.html" target="_blank"><h4>关于产品</h1></a></li>
+						<li class="nav-bd-link"><a href="还没填" target="_blank"><h4>可持续发展</h4></a></li>
+						<li class="nav-bd-link active"><a href="./join us.html" target="_blank" class="pointer"><h4>加入我们</h4></a></li>
+						<li class="nav-bd-link" ><a href="还没填" target="_blank"><h4>联系我们</h4></a></li>
 						<li class="nav-bd-link"><a href="还没填" target="_blank"><h4>投资者关系</h4></a></li>
 						<div class="sideline" style="width: 67px; left: 15px;"></div>
-					</ul>
+					</ul></center>
 				</div>
 			</div>
 		</div>
 
     <div class="video" >
       <div style="margin-left: 170px;">
-      <br><br><br><br><br><br><br><br><br><br><br><br><h1>招最好的人，给最大的空间</h1>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+	  <!-- 标题文字添加 -->
+	  <h1>招最好的人，给最大的空间</h1>
       <h1>看最后的结果，让优秀人才脱颖而出</h1></div>
-      
+      <!-- 背景视频引入 -->
       <video autoplay muted loop >
       <source src="./images/video.mp4">
   
       </video>
 <br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br>
-    <div class="flooer" style="z-index: 3;width: 100%;height: 185px; background-color: #fff;;opacity: 0.55; "bottom="0px" >
+        <!--底部分栏 -->
+<div class="flooer" >
 		
       <ul style="display:balock;" id="menu" >
        
@@ -206,7 +147,7 @@
       </ul>
     </div>
   </div>
-
+        <!-- js引入 -->
 		<div class="loading" style="inline-size: auto;"></div>
 		<script src="./js/jquery.min.js"></script>
 		<script src="./js/rem.min.js"></script>
