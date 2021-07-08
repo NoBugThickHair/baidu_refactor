@@ -2,10 +2,10 @@
 /*
 * 百度页面的首页
 * @version: 1.0
-* @Author: 
-* @Date: 2020-09-24 10:13:07
-* @Last Modified by: WinnieShen
-* @Last Modified time: 2020-09-24 17:12:06
+* @Author: Bug无踪，头发出众小组
+* @Date: 
+* @Last Modified by: 
+* @Last Modified time: 
 */
 -->
 $(function() {
