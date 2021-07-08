@@ -120,7 +120,7 @@ a.link {
 /*工作在百度*/
 
 .inwork-section-title {
-  color: #0e0d0d;
+  color: #fcf8f8;
 }
 
 .bd-home-inwork {
@@ -258,6 +258,17 @@ a.link {
   margin-top: 14px;
   border-bottom: 4px #000000 solid;
   border-radius: 6px;
+}
+.bg::before{
+  opacity: 0.5;
+}
+.bg{
+  height: 750px;
+  opacity: 0.8;
+ background: url(../images/gongzuo.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+
 }
 
 
